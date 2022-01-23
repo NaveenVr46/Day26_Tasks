@@ -1,0 +1,230 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+APP.JS
+
+import './App.css';
+import PriceCart from './components/PriceCart';
+function App() {
+  return (
+    <section className="pricing py-5">
+  <div className="container">
+    <div className="row">
+     <PriceCart/>
+     
+    </div>
+  </div>
+</section>
+  );
+}
+
+export default App;
+
+APP.CSS
+section.pricing {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+}
+
+PriceCart.JS
+import React from 'react'
+
+function PriceCart() {
+  return <> 
+  <div className="col-lg-4">
+    <div className="card mb-5 mb-lg-0">
+      <div className="card-body">
+        <h5 className="card-title text-muted text-uppercase text-center">Free</h5>
+        <h6 className="card-price text-center">$0<span className="period">/month</span></h6>
+        <hr/>
+        <ul className="fa-ul">
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Single User</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>5GB Storage</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Unlimited Public Projects</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Community Access</li>
+          <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>Unlimited
+            Private Projects</li>
+          <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>Dedicated
+            Phone Support</li>
+          <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>Free Subdomain
+          </li>
+          <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>Monthly Status
+            Reports</li>
+        </ul>
+        <div className="d-grid">
+          <a href="#" className="btn btn-primary text-uppercase">Button</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div className="col-lg-4">
+    <div className="card mb-5 mb-lg-0">
+      <div className="card-body">
+        <h5 className="card-title text-muted text-uppercase text-center">Plus</h5>
+        <h6 className="card-price text-center">$9<span className="period">/month</span></h6>
+        <hr/>
+        <ul className="fa-ul">
+          <li><span className="fa-li"><i className="fas fa-check"></i></span><strong>5 Users</strong></li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>50GB Storage</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Unlimited Public Projects</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Community Access</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Unlimited Private Projects</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Dedicated Phone Support</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Free Subdomain</li>
+          <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>Monthly Status
+            Reports</li>
+        </ul>
+        <div className="d-grid">
+          <a href="#" className="btn btn-primary text-uppercase">Button</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div className="col-lg-4">
+    <div className="card">
+      <div className="card-body">
+        <h5 className="card-title text-muted text-uppercase text-center">Pro</h5>
+        <h6 className="card-price text-center">$49<span className="period">/month</span></h6>
+        <hr/>
+        <ul className="fa-ul">
+          <li><span className="fa-li"><i className="fas fa-check"></i></span><strong>Unlimited Users</strong>
+          </li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>150GB Storage</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Unlimited Public Projects</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Community Access</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Unlimited Private Projects</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Unlimited Private Projects</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Unlimited Private Projects</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Unlimited Private Projects</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Dedicated Phone Support</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span><strong>Unlimited</strong> Free
+            Subdomains</li>
+          <li><span className="fa-li"><i className="fas fa-check"></i></span>Monthly Status Reports</li>
+        </ul>
+        <div className="d-grid">
+          <a href="#" className="btn btn-primary text-uppercase">Button</a>
+        </div>
+      </div>
+    </div>
+  </div></>;
+}
+
+export default PriceCart;
+
+Index.Htm;l
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
